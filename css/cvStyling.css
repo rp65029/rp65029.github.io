@@ -1,0 +1,259 @@
+/* General Styles */
+
+body {
+    margin: 0;
+    background-color: #f4f3ef;
+}
+
+/* Nav Styles */
+nav {
+    background-color: #f4f3ef;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 2px solid rgb(49, 44, 44);
+}
+
+nav p, nav a {
+    margin: 0; 
+    font-family: Arial, sans-serif;
+}
+
+nav a {
+    color: navy;
+    text-decoration: none;
+    font-weight: bold; 
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: rgb(0, 81, 139);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #f4f3ef;
+    color: black; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 15px; 
+    border-top: 2px solid darkgray;
+    font-family: Arial, sans-serif;
+}
+
+footer a {
+    color: navy;
+    text-decoration: none; 
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline; 
+    color: rgb(0, 81, 139);
+}
+
+/* Splash Section */
+.splash {
+    background-color: #f4f3ef;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid rgb(49, 44, 44);
+}
+
+.splash h1 {
+  font-family: "Funnel Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: rgb(49, 44, 44);
+  text-shadow: 2x 2x 4x rgb(18, 18, 17);
+  font-size: 50px;
+}
+
+.splash img {
+    border: 10px;
+    border: solid black;
+    border-radius: 50%;
+    outline: 5px black;
+}
+
+.splash p:first-of-type {
+    font-size:14px;
+    color: gray;
+}
+.splash p:last-of-type {
+    font-family: "Funnel Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:18px;
+    color: rgb(49, 44, 44);
+}
+
+/* Horizontal Rules */
+hr {
+    border-width: 10px;
+    border-style: solid;
+}
+
+/* Sections */
+section {
+    background-color:#f4f3ef;
+    border-bottom: 2px rgb(49, 44, 44);
+}
+
+/* Section Headings */
+section h2 {
+    font-family: "Funnel Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: rgb(49, 44, 44);
+}
+
+/* Paragraph Styles */
+section p {
+    margin-left: 20px;
+}
+
+.education p {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(49, 44, 44);
+    background-color: #fefcf6;
+    padding: 10px;
+    border-left: 4px solid rgb(49, 44, 44);
+    border-radius: 5px;
+}
+section .education p {
+    border-bottom: 2px solid rgb(49, 44, 44);
+}
+
+section .Awards {
+    margin-right: 10px;
+}
+/* link styles */
+section a {
+    color: navy;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+section a:hover {
+    color: rgb(0, 81, 139);
+    text-decoration: underline;
+    font-size: 17px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* List Styles */
+ul {
+    list-style-type: circle;
+    margin-left: 30px;
+    color: rgb(49, 44, 44);
+}
+
+dl {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    align-items: start; 
+}
+
+dl dt {
+    grid-column: 1;
+    font-weight: bold;
+}
+
+dl dd {
+    grid-column: 2; 
+    color: #7f8c8d;
+    font-style: italic;
+    text-align: right; 
+}
+
+section .projects li {
+    list-style-type: circle;
+    margin-left: 30px;
+    color: rgb(49, 44, 44);
+}
+
+/* Project Section */
+.three-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.card img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    object-fit:contain;
+    max-height: 150px;
+    margin: 0 auto 10px auto;
+}
+
+.card h3 {
+    color: #2c3e50;
+}
+
+/* Contact Page Styles */
+.one-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    text-align: left;
+    max-width: 400px; 
+    margin: 50px auto; 
+    padding: 20px;
+    background-color: #ffffff; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input:focus, form textarea:focus {
+    border-color: rgb(49, 44, 44);
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(49, 44, 44);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
